@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+body {
+    aspect-ratio: 3 / 4;
+    background-color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+
+#day-num {
+    font-size: 150px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 0px;
+}
+
+#day-month-year {
+    padding-left: 200px;
+    margin-left: 0px;
+    text-align: right;
+}
+
+#day {
+    font-size: 50px;
+}
+
+#month-year {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.current-date ul {
+    list-style: none;
+    border: 2px solid white;
+    margin: 10px;
+    border-radius: 25px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.current-date li {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.current-date h2 {
+    margin: 0px;
+    padding: 0px;
+}
