@@ -11,12 +11,14 @@ var x = setInterval(function() {
     document.getElementById("day-num").innerHTML = dayNum;
     console.log(day+dayNum+month+year);
 
-    var hour = new Date().getHours() % 12;
+    var hour = new Date().getHours();
+    var suf = (hour > 11) ? " PM" : " AM";
+    hour = hour % 12;
     var min = new Date().getMinutes();
     min = min.toString();
     min = (min.length != 1) ? min : "0" + min;
     var time = hour + ":" + min;
-    document.getElementById("time").innerHTML = time;
+    document.getElementById("time").innerHTML = time + suf;
 
     return false;
 },1000);
