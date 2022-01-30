@@ -13,14 +13,11 @@ function replaceElements(response) {
         numEntries--;
         count++;
     }
-<<<<<<< HEAD
 
-=======
     while (numDel > 0) {
         $("#"+count).slideUp();
         count++;
     }
->>>>>>> 160cb50cf85c45f4e768c7a05b8a0967c9fd8559
 
 }
 
