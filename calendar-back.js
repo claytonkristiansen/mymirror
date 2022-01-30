@@ -116,7 +116,7 @@ function listUpcomingEvents() {
     });
 }
 
-// var testButton = document.getElementById('testbutton');
-// testButton.onclick = updateSigninStatus(isSignedIn);
+var testButton = document.getElementById('testbutton');
+testButton.onclick = updateSigninStatus(isSignedIn);
 
 //var x = setInterval(listUpcomingEvents(), 5000);
