@@ -51,7 +51,7 @@ body {
     padding-bottom: 0px;
     padding-left: 10px;
     padding-right: 25px;
-    margin-right: 25px;
+    margin-right: 20px;
     margin-left: 4px;
 }
 
@@ -71,7 +71,7 @@ body {
     border: 2px solid white;
     border-radius: 20px;
     margin: 5px;
-    margin-right: 25px;
+    margin-right: 20px;
     margin-left: 4px;
 }
 
@@ -100,7 +100,7 @@ body {
     border-radius: 20px;
     padding-left: 0px;
     margin-left: 4px;
-    margin-right: 25px;
+    margin-right: 20px;
 }
 
 .weather-container ul {
