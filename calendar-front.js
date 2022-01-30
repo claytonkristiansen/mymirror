@@ -15,7 +15,7 @@ function replaceElements(response) {
             name = name.substring(0,26) + "...";
         }
         var time = response["result"]["items"][count]["start"]["dateTime"];
-        var timeEndT = reponse["result"]["items"][count]["end"]["dateTime"];
+        var timeEndT = response["result"]["items"][count]["end"]["dateTime"];
         console.log(time);
         var dashIdx = time.indexOf('T');
         var dashIdx2 = timeEndT.indexOf('T');
