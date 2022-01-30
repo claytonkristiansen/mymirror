@@ -89,7 +89,6 @@ function appendPre(message) {
  * appropriate message is printed.
  */
 function listUpcomingEvents() {
-    handleClientLoad();
     console.log("Listed Upcoming Events");
     gapi.client.calendar.events.list({
         'calendarId': 'primary',
@@ -118,4 +117,4 @@ function listUpcomingEvents() {
     });
 }
 
-var x = setInterval(listUpcomingEvents(), 500);
+var x = setInterval(listUpcomingEvents(), 5000);
