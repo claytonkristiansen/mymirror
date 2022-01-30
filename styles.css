@@ -127,16 +127,20 @@ body {
 
 
 #hi-lo {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 #temp {
     vertical-align: bottom;
-    padding-left: 80px;
+    padding-left: 60px;
     padding-bottom: 18px;
     padding-top: 8px;
     font-size: 25px;
     margin-bottom: 0px;
     margin-top: 0px;
     font-weight: bold;
+}
+
+#location {
+    font-size: 20px;
 }
