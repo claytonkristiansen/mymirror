@@ -16,8 +16,8 @@ function replaceElements(response) {
         }
         var time = response["result"]["items"][count]["start"]["dateTime"];
         console.log(time);
-        var dashIdx = time.indexOf('-');
-        var timeStart = time.substring(dashIdx-8,dashIdx-3);
+        var dashIdx = time.indexOf('T');
+        var timeStart = time.substring(dashIdx+1,dashIdx+6);
         var timeStartHour = Number(time.substring(0,2));
         var timeStartMin = Number(time.substring(3,5));
         var sufS = (timeStartHour > 11) ? "PM" : "AM";
@@ -25,8 +25,8 @@ function replaceElements(response) {
         if (timeStartHour == 0) {
             timeStartHour = 12;
         }
-        var timeEnd = time.substring(dashIdx+1,dashIdx+9);
-        var timeEndHour = Number(time.substring(0,3));
+        var timeEnd = time.substring(dashIdx+10,dashIdx+15);
+        var timeEndHour = Number(time.substring(0,2));
         var timeEndMin = Number(time.substring(3,5));
         var sufE = (timeEndHour > 11) ? "PM" : "AM";
         timeEndHour= timeEndHour % 12;
