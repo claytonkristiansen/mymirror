@@ -7,10 +7,10 @@ body {
 }
 
 #day-num {
-    font-size: 150px;
+    font-size: 70px;
     margin-left: 0px;
     padding-left: 0px;
-    margin-right: 0px;
+    margin-right: 90px;
     padding-bottom: 0px;
 }
 
@@ -18,35 +18,37 @@ body {
     padding-left: 0px;
     margin-left: 0px;
     text-align: right;
+    padding-bottom: 0;
+    padding-top: 10px;
 }
 
 #day {
-    font-size: 50px;
+    font-size: 25px;
 }
 
 #month-year {
     font-weight: normal;
-    font-size: 20px;
-    padding-bottom: 7px;
+    font-size: 15px;
+    padding-bottom: 0;
 }
 
 #time {
-    font-size: 30px;
+    font-size: 15px;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
 
 .current-date {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .current-date ul {
     list-style: none;
     border: 2px solid white;
-    margin: 10px;
-    border-radius: 25px;
+    margin: 5px;
+    border-radius: 20px;
     padding-bottom: 0px;
-    padding-left: 25px;
+    padding-left: 10px;
     padding-right: 25px;
 }
 
@@ -64,23 +66,26 @@ body {
 
 .event-entry {
     border: 2px solid white;
-    border-radius: 25px;
-    margin: 10px;
+    border-radius: 20px;
+    margin: 5px;
 }
 
 .event-entry p {
-    font-size: 20px;
+    font-size: 12px;
     padding-right: 15px;
     margin-top: 0px;
     padding-top: 0px;
     text-align: right;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     margin-bottom: 0;
 }
 
 .event-entry h1 {
+    padding-top: 7px;
+    margin-top: 0px;
     padding-bottom: 0px;
-    font-size: 35px;
+    font-size: 20px;
     padding-left: 15px;
     margin-bottom: 0;
+    font-weight: normal;
 }
