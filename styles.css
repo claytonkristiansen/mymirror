@@ -145,8 +145,17 @@ body {
     margin-bottom: 0px;
     margin-top: 0px;
     font-weight: bold;
+    margin-right: 0px;
 }
 
 #location {
     font-size: 20px;
+}
+
+#authorize_button {
+    background-color: black;
+    color: black;
+    opacity: 0;
+    width: 80%;
+    height: 30px;
 }

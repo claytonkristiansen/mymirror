@@ -45,10 +45,6 @@
         <li id="condition"></li>
         <li><p id="location" style="font-weight: bold;"></p><p id="hi-lo"></p></li>
         <li id="temp"></li>
-        <li>
-            <p id="location" style="font-weight: bold;"></p>
-            <p id="temp"></p>
-        </li>
         <script>
             url = "https://api.openweathermap.org/data/2.5/weather?id=4682464&appid=70233fd63e460a06635ebd916c31fcf2&units=imperial"
             let response = fetch(url);
@@ -90,7 +86,7 @@ limitations under the License.
     </head>
 
     <body>
-        <button id="authorize_button" style="display: none;">Sign In</button>
+        <button id="authorize_button"></button>
         <button id="signout_button" style="display: none;">Sign Out</button>
 
         <pre id="content" style="white-space: pre-wrap;"></pre>
