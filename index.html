@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html>
-<script src="https://accounts.google.com/gsi/client" async defer></script>
-<script src="https://apis.google.com/js/api.js"></script>
-<script src="googleapiinitialize.js"></script>
-
-<div id="g_id_onload" data-client_id="729667979950-8u5r6kkclsj5cisldvfbj51gfh07mnjn.apps.googleusercontent.com" data-login_uri="https://claytonkristiansen.github.io/mymirror/"
-    data-auto_prompt="false" data-callback="handleCredentialResponse">
-</div>
-<script>
-    async function init() {
-        // 2. Initialize the JavaScript client library.
-        await gapi.client.init({discoveryDocs: ['https://discovery.googleapis.com/$discovery/rest']});
-        start();
-    }
-    function handleCredentialResponse(response) 
-    {
-        // decodeJwtResponse() is a custom function defined by you
-        // to decode the credential response.
-        //const responsePayload = decodeJwtResponse(response.credential);
-    
-        console.log(response);
-        // console.log('Full Name: ' + responsePayload.name);
-        // console.log('Given Name: ' + responsePayload.given_name);
-        // console.log('Family Name: ' + responsePayload.family_name);
-        // console.log("Image URL: " + responsePayload.picture);
-        // console.log("Email: " + responsePayload.email);
-    }
-
-    function CalendarClickTest()
-    {
-        console.log("pressed");
-        handleClientLoad();
-        //initClient();
-        listUpcomingEvents();
-    }
-</script>
-<div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with"
-    data-shape="rectangular" data-logo_alignment="left">
-</div>
 
 <head>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="googleapiinitialize.js"></script>
+
+    <div id="g_id_onload" data-client_id="729667979950-8u5r6kkclsj5cisldvfbj51gfh07mnjn.apps.googleusercontent.com"
+        data-login_uri="https://claytonkristiansen.github.io/mymirror/" data-auto_prompt="false"
+        data-callback="handleCredentialResponse">
+    </div>
+    <script>
+        async function init() {
+            // 2. Initialize the JavaScript client library.
+            await gapi.client.init({ discoveryDocs: ['https://discovery.googleapis.com/$discovery/rest'] });
+            start();
+        }
+        function handleCredentialResponse(response) {
+            // decodeJwtResponse() is a custom function defined by you
+            // to decode the credential response.
+            //const responsePayload = decodeJwtResponse(response.credential);
+
+            console.log(response);
+            // console.log('Full Name: ' + responsePayload.name);
+            // console.log('Given Name: ' + responsePayload.given_name);
+            // console.log('Family Name: ' + responsePayload.family_name);
+            // console.log("Image URL: " + responsePayload.picture);
+            // console.log("Email: " + responsePayload.email);
+        }
+
+        function CalendarClickTest() {
+            console.log("pressed");
+            handleClientLoad();
+            //initClient();
+            listUpcomingEvents();
+        }
+    </script>
+    <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with"
+        data-shape="rectangular" data-logo_alignment="left">
+    </div>
     <div class="current-date">
         <ul>
             <li id="day-num">
@@ -76,21 +75,25 @@
         </div>
     </div>
     <ul class="weather-container">
-              <li id="condition"></li>
-              <li><p id="location" style="font-weight: bold;"></p><p id="temp"></p></li>
-              <script>
-                  url = "https://api.openweathermap.org/data/2.5/weather?id=4682464&appid=70233fd63e460a06635ebd916c31fcf2&units=imperial"
-                  let response = fetch(url);
-                  fetch(url)
-                  .then(response => response.json())
-                  .then(data => { 
-                      console.log(data);
-                      document.getElementById("location").innerHTML = data["name"];
-                      document.getElementById("temp").innerHTML = Math.round(data["main"]["temp"]).toString() + "°";
-                      document.getElementById("condition").innerHTML = "<img src=https://openweathermap.org/img/w/" + data["weather"]["0"]["icon"] + ".png></a>";
-                  });
-              </script>
-          </ul>
+        <li id="condition"></li>
+        <li>
+            <p id="location" style="font-weight: bold;"></p>
+            <p id="temp"></p>
+        </li>
+        <script>
+            url = "https://api.openweathermap.org/data/2.5/weather?id=4682464&appid=70233fd63e460a06635ebd916c31fcf2&units=imperial"
+            let response = fetch(url);
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    document.getElementById("location").innerHTML = data["name"];
+                    document.getElementById("temp").innerHTML = Math.round(data["main"]["temp"]).toString() + "°";
+                    document.getElementById("condition").innerHTML = "<img src=https://openweathermap.org/img/w/" + data["weather"]["0"]["icon"] + ".png></a>";
+                });
+        </script>
+    </ul>
     <button onclick="CalendarClickTest()">CLICK</button>
 </body>
+
 </html>
