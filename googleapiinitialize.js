@@ -17,6 +17,7 @@ var signoutButton = document.getElementById('signout_button');
  */
 function handleClientLoad() {
   gapi.load('client:auth2', initClient);
+  console.log("Authenticated fine");
 }
 
 /**
