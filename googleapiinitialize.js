@@ -33,6 +33,7 @@ function handleClientLoad() {
       // 3. Make the API request.
       const apiRequest = await gapi.client.discovery.apis.list();
       const result = JSON.parse(apiRequest.body);
+      console.log(apiRequest);
       
       // 4. Log the results of the API request
       const androidAPIs = result.items.filter(api => api.id.startsWith(API_QUERY));
