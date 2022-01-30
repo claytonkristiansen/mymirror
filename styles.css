@@ -94,3 +94,33 @@ body {
     margin-bottom: 0;
     font-weight: normal;
 }
+
+.weather-container {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding-left: 0px;
+    margin-left: 4px;
+    margin-right: 30px;
+}
+
+.weather-container ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.weather-container li{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.weather-container p {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+#condition {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
