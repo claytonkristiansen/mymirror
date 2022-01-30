@@ -43,48 +43,41 @@
     </div>
     <ul class="weather-container">
         <li id="condition"></li>
-        <li><p id="location" style="font-weight: bold;"></p><p id="hi-lo"></p></li>
+        <li>
+            <p id="location" style="font-weight: bold;"></p>
+            <p id="hi-lo"></p>
+        </li>
         <li id="temp"></li>
         <script>
             url = "https://api.openweathermap.org/data/2.5/weather?id=4682464&appid=70233fd63e460a06635ebd916c31fcf2&units=imperial"
             let response = fetch(url);
             fetch(url)
-            .then(response => response.json())
-            .then(data => { 
-                console.log(data);
-                document.getElementById("hi-lo").innerHTML = "H: " + Math.round(data["main"]["temp_max"]) + "°   L: " + Math.round(data["main"]["temp_min"]) + "°";
-                document.getElementById("location").innerHTML = data["name"];
-                document.getElementById("temp").innerHTML = Math.round(data["main"]["temp"]).toString() + "°";
-                document.getElementById("condition").innerHTML = "<img src=icons/" + data["weather"]["0"]["icon"] + ".png></a>";
-            });
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    document.getElementById("hi-lo").innerHTML = "H: " + Math.round(data["main"]["temp_max"]) + "°   L: " + Math.round(data["main"]["temp_min"]) + "°";
+                    document.getElementById("location").innerHTML = data["name"];
+                    document.getElementById("temp").innerHTML = Math.round(data["main"]["temp"]).toString() + "°";
+                    document.getElementById("condition").innerHTML = "<img src=icons/" + data["weather"]["0"]["icon"] + ".png></a>";
+                });
         </script>
         <script src="calendar-front.js"></script>
     </ul>
 
 
-    <!--
-Copyright 2018 Google LLC
+    <button id="authorize_button" style="display: none;">Sign In</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+    <pre id="content" style="white-space: pre-wrap;"></pre>
 
-    https://www.apache.org/licenses/LICENSE-2.0
+    <script src="calendar-back.js"></script>
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
--->
-    <!-- [START calendar_quickstart] -->
-    <!DOCTYPE html>
-    <html>
+    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+        </script>
 
-    <head>
-        <meta charset="utf-8" />
-    </head>
 
+<<<<<<< HEAD
     <body>
         <button id="authorize_button"></button>
         <button id="signout_button" style="display: none;">Sign Out</button>
@@ -99,6 +92,8 @@ limitations under the License.
     </body>
 
     </html>
+=======
+>>>>>>> c8451d1a5f9a4ad85bbed2a2d599370a9ea670e7
 </body>
 
 </html>
