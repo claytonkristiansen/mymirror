@@ -116,7 +116,9 @@ function listUpcomingEvents() {
     });
 }
 
-var testButton = document.getElementById('testbutton');
-testButton.onclick = handleClientLoad();
+
+//TODO: ADD AUTO REFRESH
+// var testButton = document.getElementById('testbutton');
+// testButton.onclick = handleClientLoad();
 
 //var x = setInterval(listUpcomingEvents(), 5000);
