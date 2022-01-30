@@ -99,7 +99,7 @@ function listUpcomingEvents() {
     }).then(function (response) {
         var events = response.result.items;
         //appendPre('Upcoming events:');
-        console.log(response);
+        console.log("Listed Upcoming Events");
         replaceElements(response);
 
         if (events.length > 0) {
