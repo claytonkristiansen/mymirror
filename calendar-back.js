@@ -89,6 +89,11 @@ function appendPre(message) {
  * appropriate message is printed.
  */
 function listUpcomingEvents() {
+    
+    gapi.client.calendar.calendarList.list(
+    ).then(function(response){
+        console.log(response);
+    })
     gapi.client.calendar.events.list({
         'calendarId': 'primary',
         'timeMin': (new Date()).toISOString(),
