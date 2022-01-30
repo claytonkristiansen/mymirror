@@ -10,7 +10,7 @@ body {
     font-size: 70px;
     margin-left: 0px;
     padding-left: 0px;
-    margin-right: 100px;
+    margin-right: 90px;
     padding-bottom: 0px;
 }
 
@@ -51,7 +51,7 @@ body {
     padding-bottom: 0px;
     padding-left: 10px;
     padding-right: 25px;
-    margin-right: 30px;
+    margin-right: 20px;
     margin-left: 4px;
 }
 
@@ -71,7 +71,7 @@ body {
     border: 2px solid white;
     border-radius: 20px;
     margin: 5px;
-    margin-right: 30px;
+    margin-right: 20px;
     margin-left: 4px;
 }
 
@@ -100,7 +100,7 @@ body {
     border-radius: 20px;
     padding-left: 0px;
     margin-left: 4px;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .weather-container ul {
@@ -120,7 +120,33 @@ body {
     margin-bottom: 2px;
 }
 
+.weather-container img {
+    width: 64px;
+    height: 64px;
+}
+
 #condition {
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+
+#hi-lo {
+    font-size: 15px;
+}
+
+#temp {
+    vertical-align: bottom;
+    padding-left: 60px;
+    padding-bottom: 18px;
+    padding-top: 8px;
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+#location {
+    font-size: 20px;
 }

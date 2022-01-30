@@ -43,6 +43,8 @@
     </div>
     <ul class="weather-container">
         <li id="condition"></li>
+        <li><p id="location" style="font-weight: bold;"></p><p id="hi-lo"></p></li>
+        <li id="temp"></li>
         <li>
             <p id="location" style="font-weight: bold;"></p>
             <p id="temp"></p>
@@ -51,6 +53,18 @@
             url = "https://api.openweathermap.org/data/2.5/weather?id=4682464&appid=70233fd63e460a06635ebd916c31fcf2&units=imperial"
             let response = fetch(url);
             fetch(url)
+            .then(response => response.json())
+            .then(data => { 
+                console.log(data);
+                document.getElementById("hi-lo").innerHTML = "H: " + Math.round(data["main"]["temp_max"]) + "°   L: " + Math.round(data["main"]["temp_min"]) + "°";
+                document.getElementById("location").innerHTML = data["name"];
+                document.getElementById("temp").innerHTML = Math.round(data["main"]["temp"]).toString() + "°";
+                document.getElementById("condition").innerHTML = "<img src=icons/" + data["weather"]["0"]["icon"] + ".png></a>";
+            });
+        </script>
+        <script src="calendar-front.js"></script>
+    </ul>
+    <button onclick="CalendarClickTest()">CLICK</button>
                 .then(response => response.json())
                 .then(data => {
                     console.log(data);
