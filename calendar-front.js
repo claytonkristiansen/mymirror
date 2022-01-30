@@ -14,6 +14,7 @@ function replaceElements(response) {
         count++;
     }
 
+
     while (numDel > 0) {
         $("#"+count).slideUp();
         count++;
