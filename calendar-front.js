@@ -20,6 +20,8 @@ function replaceElements(response) {
         var timeStart = time.substring(dashIdx+1,dashIdx+6);
         var timeStartHour = Number(timeStart.substring(0,2));
         var timeStartMin = Number(timeStart.substring(3,5));
+        timeStartMin = timeStartMin.toString();
+        timeStartMin = (timeStartMin.length != 1) ? timeStartMin : "0" + timeStartMin;
         var sufS = (timeStartHour > 11) ? "PM" : "AM";
         timeStartHour = timeStartHour % 12;
         if (timeStartHour == 0) {
@@ -28,6 +30,8 @@ function replaceElements(response) {
         var timeEnd = time.substring(dashIdx+10,dashIdx+15);
         var timeEndHour = Number(timeEnd.substring(0,2));
         var timeEndMin = Number(timeEnd.substring(3,5));
+        timeEndMin = timeEndMin.toString();
+        timeEndMin = (timeEndMin.length != 1) ? timeEndMin : "0" + timeEndMin;
         var sufE = (timeEndHour > 11) ? "PM" : "AM";
         timeEndHour= timeEndHour % 12;
         if (timeEndHour == 0) {
