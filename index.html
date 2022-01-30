@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 <script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="https://apis.google.com/js/api.js"></script>
+<script src="googleapiinitialize.js"></script>
 
 <div id="g_id_onload" data-client_id="729667979950-8u5r6kkclsj5cisldvfbj51gfh07mnjn.apps.googleusercontent.com" data-login_uri="https://claytonkristiansen.github.io/mymirror/"
     data-auto_prompt="false" data-callback="handleCredentialResponse">
 </div>
 <script>
+    async function init() {
+        // 2. Initialize the JavaScript client library.
+        await gapi.client.init({discoveryDocs: ['https://discovery.googleapis.com/$discovery/rest']});
+        start();
+    }
     function handleCredentialResponse(response) 
     {
         // decodeJwtResponse() is a custom function defined by you
@@ -18,6 +25,12 @@
         // console.log('Family Name: ' + responsePayload.family_name);
         // console.log("Image URL: " + responsePayload.picture);
         // console.log("Email: " + responsePayload.email);
+    }
+
+    function CalendarClickTest()
+    {
+        console.log("pressed");
+        listUpcomingEvents();
     }
 </script>
 <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with"
@@ -60,6 +73,7 @@
             <p>4-5PM</p>
         </div>
     </div>
+    <button onclick="CalendarClickTest()">CLICK</button>
 </body>
 
 </html>
