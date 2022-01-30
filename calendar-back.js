@@ -117,6 +117,6 @@ function listUpcomingEvents() {
 }
 
 var testButton = document.getElementById('testbutton');
-testButton.onclick = updateSigninStatus(true);
+testButton.onclick = handleClientLoad;
 
 //var x = setInterval(listUpcomingEvents(), 5000);
