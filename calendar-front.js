@@ -50,4 +50,4 @@ function replaceElements(response) {
 
 }
 
-setInterval(listUpcomingEvents(), 5000);
+var x = setInterval(listUpcomingEvents(), 500);

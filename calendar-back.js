@@ -94,7 +94,7 @@ function listUpcomingEvents() {
         'timeMin': (new Date()).toISOString(),
         'showDeleted': false,
         'singleEvents': true,
-        'maxResults': 20,
+        'maxResults': 4,           //4 is the limit set in calendar-front.js Will make a constant later
         'orderBy': 'startTime'
     }).then(function (response) {
         var events = response.result.items;
