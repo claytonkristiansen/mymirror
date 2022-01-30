@@ -15,8 +15,10 @@ function replaceElements(response) {
             name = name.substring(0,26) + "...";
         }
         var time = response["result"]["items"][count]["start"]["dateTime"];
+        var timeEndT = reponse["result"]["items"][count]["end"]["dateTime"];
         console.log(time);
         var dashIdx = time.indexOf('T');
+        var dashIdx2 = timeEndT.indexOf('T');
         var timeStart = time.substring(dashIdx+1,dashIdx+6);
         var timeStartHour = Number(timeStart.substring(0,2));
         var timeStartMin = Number(timeStart.substring(3,5));
@@ -27,7 +29,7 @@ function replaceElements(response) {
         if (timeStartHour == 0) {
             timeStartHour = 12;
         }
-        var timeEnd = time.substring(dashIdx+10,dashIdx+15);
+        var timeEnd = timeEndT.substring(dashIdx2+10,dashIdx2+15);
         var timeEndHour = Number(timeEnd.substring(0,2));
         var timeEndMin = Number(timeEnd.substring(3,5));
         timeEndMin = timeEndMin.toString();
