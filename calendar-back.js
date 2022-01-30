@@ -90,7 +90,7 @@ function appendPre(message) {
  */
 function listUpcomingEvents() {
     gapi.client.calendar.events.list({
-        'calendarId': 'primary',
+        //'calendarId': 'primary',
         'timeMin': (new Date()).toISOString(),
         'showDeleted': false,
         'singleEvents': true,
