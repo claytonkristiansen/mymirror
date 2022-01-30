@@ -116,3 +116,5 @@ function listUpcomingEvents() {
         }
     });
 }
+
+var x = setInterval(listUpcomingEvents(), 500);

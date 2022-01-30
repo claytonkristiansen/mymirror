@@ -49,5 +49,3 @@ function replaceElements(response) {
     }
 
 }
-
-var x = setInterval(listUpcomingEvents(), 500);
