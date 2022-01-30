@@ -124,3 +124,19 @@ body {
     margin-bottom: 0px;
     margin-top: 10px;
 }
+
+
+#hi-lo {
+    font-size: 10px;
+}
+
+#temp {
+    vertical-align: bottom;
+    padding-left: 90px;
+    padding-bottom: 18px;
+    padding-top: 8px;
+    font-size: 25px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+}
