@@ -65,14 +65,6 @@
         <script src="calendar-front.js"></script>
     </ul>
     <button onclick="CalendarClickTest()">CLICK</button>
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data);
-                    document.getElementById("location").innerHTML = data["name"];
-                    document.getElementById("temp").innerHTML = Math.round(data["main"]["temp"]).toString() + "°";
-                    document.getElementById("condition").innerHTML = "<img src=https://openweathermap.org/img/w/" + data["weather"]["0"]["icon"] + ".png></a>";
-                });
-        </script>
     </ul>
 
     <!--
@@ -95,7 +87,6 @@ limitations under the License.
     <html>
 
     <head>
-        <title>Google Calendar API Quickstart</title>
         <meta charset="utf-8" />
     </head>
 
