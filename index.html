@@ -89,7 +89,7 @@
                 document.getElementById("hi-lo").innerHTML = "H: " + Math.round(data["main"]["temp_max"]) + "°   L: " + Math.round(data["main"]["temp_min"]) + "°";
                 document.getElementById("location").innerHTML = data["name"];
                 document.getElementById("temp").innerHTML = Math.round(data["main"]["temp"]).toString() + "°";
-                document.getElementById("condition").innerHTML = "<img src=https://openweathermap.org/img/w/" + data["weather"]["0"]["icon"] + ".png></a>";
+                document.getElementById("condition").innerHTML = "<img src=icons/" + data["weather"]["0"]["icon"] + ".png></a>";
             });
         </script>
     </ul>

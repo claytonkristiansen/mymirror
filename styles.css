@@ -120,9 +120,15 @@ body {
     margin-bottom: 2px;
 }
 
+.weather-container img {
+    width: 64px;
+    height: 64px;
+}
+
 #condition {
     margin-bottom: 0px;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-left: 5px;
 }
 
 
