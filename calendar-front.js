@@ -40,7 +40,7 @@ function replaceElements(response) {
             timeEndHour = 12;
         }
         console.log(count + ": StartTime:"+timeStart+" EndTime:"+timeEnd)
-        var timeF = timeStartHour.toString() + ":" + timeStartMin.toString() + sufS + "-" + timeEndHour.toString() + ":" + timeEndMin.toString() + sufE;
+        var timeF = timeStartHour.toString() + ":" + timeStartMin.toString() + sufS;
         
         document.getElementsByClassName("event-entry")[count].innerHTML = "<h1>"+name+"</h1><p>"+timeF+"</p>";
         numEntries--;
