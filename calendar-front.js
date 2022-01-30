@@ -19,6 +19,7 @@ function replaceElements(response) {
         $("#"+count).slideUp();
         count++;
     }
+
 }
 
 setInterval(listUpcomingEvents(), 5);
