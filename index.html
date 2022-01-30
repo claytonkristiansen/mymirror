@@ -130,7 +130,7 @@
             xmlhttp.open('GET', 'https://www.googleapis.com/calendar/v3/users/me/calendarList/');
             xmlhttp.setRequestHeader('Authorization', 'Bearer ' + AccessToken);
             xmlhttp.send(null);
-            console.log(xmlhttp.response);
+            console.log(xmlhttp.responseXML);
         }
     </script>
     <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with"
