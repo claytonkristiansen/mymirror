@@ -18,16 +18,16 @@ function replaceElements(response) {
         console.log(time);
         var dashIdx = time.indexOf('T');
         var timeStart = time.substring(dashIdx+1,dashIdx+6);
-        var timeStartHour = Number(time.substring(1,3));
-        var timeStartMin = Number(time.substring(4,6));
+        var timeStartHour = Number(timeStart.substring(1,3));
+        var timeStartMin = Number(timeStart.substring(4,6));
         var sufS = (timeStartHour > 11) ? "PM" : "AM";
         timeStartHour = timeStartHour % 12;
         if (timeStartHour == 0) {
             timeStartHour = 12;
         }
         var timeEnd = time.substring(dashIdx+10,dashIdx+15);
-        var timeEndHour = Number(time.substring(1,3));
-        var timeEndMin = Number(time.substring(4,6));
+        var timeEndHour = Number(timeEnd.substring(1,3));
+        var timeEndMin = Number(timeEnd.substring(4,6));
         var sufE = (timeEndHour > 11) ? "PM" : "AM";
         timeEndHour= timeEndHour % 12;
         if (timeEndHour == 0) {
