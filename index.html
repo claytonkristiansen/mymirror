@@ -89,7 +89,7 @@ limitations under the License.
         <p>Google Calendar API Quickstart</p>
 
         <!--Add buttons to initiate auth sequence and sign out-->
-        <button id="authorize_button" style="display: none;">Authorize</button>
+        <button id="authorize_button" style="display: none;">Sign In</button>
         <button id="signout_button" style="display: none;">Sign Out</button>
 
         <pre id="content" style="white-space: pre-wrap;"></pre>
@@ -195,7 +195,7 @@ limitations under the License.
                     'orderBy': 'startTime'
                 }).then(function (response) {
                     var events = response.result.items;
-                    appendPre('Upcoming events:');
+                    //appendPre('Upcoming events:');
                     console.log(response);
 
                     if (events.length > 0) {
@@ -205,10 +205,10 @@ limitations under the License.
                             if (!when) {
                                 when = event.start.date;
                             }
-                            appendPre(event.summary + ' (' + when + ')')
+                            //appendPre(event.summary + ' (' + when + ')')
                         }
                     } else {
-                        appendPre('No upcoming events found.');
+                        //appendPre('No upcoming events found.');
                     }
                 });
             }
