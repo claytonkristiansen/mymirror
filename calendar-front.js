@@ -21,13 +21,4 @@ function replaceElements(response) {
     }
 }
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-while(true)
-{
-    sleep(5).then(() => {
-        listUpcomingEvents();
-    })
-}
+setInterval(listUpcomingEvents(), 5);
