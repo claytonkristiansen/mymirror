@@ -10,7 +10,7 @@ body {
     font-size: 70px;
     margin-left: 0px;
     padding-left: 0px;
-    margin-right: 90px;
+    margin-right: 100px;
     padding-bottom: 0px;
 }
 
@@ -36,6 +36,7 @@ body {
     font-size: 15px;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    font-weight: normal;
 }
 
 .current-date {
@@ -75,7 +76,7 @@ body {
 }
 
 .event-entry p {
-    font-size: 12px;
+    font-size: 15px;
     padding-right: 15px;
     margin-top: 0px;
     padding-top: 0px;
@@ -92,4 +93,34 @@ body {
     padding-left: 15px;
     margin-bottom: 0;
     font-weight: normal;
+}
+
+.weather-container {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding-left: 0px;
+    margin-left: 4px;
+    margin-right: 30px;
+}
+
+.weather-container ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.weather-container li{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.weather-container p {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+#condition {
+    margin-bottom: 0px;
+    margin-top: 10px;
 }

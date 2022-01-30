@@ -15,7 +15,7 @@ var x = setInterval(function() {
     var suf = (hour > 11) ? " PM" : " AM";
     hour = hour % 12;
     if (hour == 0) {
-        hour == 12;
+        hour = 12;
     }
     var min = new Date().getMinutes();
     min = min.toString();
