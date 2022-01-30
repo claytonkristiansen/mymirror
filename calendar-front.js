@@ -9,3 +9,14 @@ function replaceElements(response) {
         count++;
     }
 }
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+while(true)
+{
+    sleep(5).then(() => {
+        listUpcomingEvents();
+    })
+}
