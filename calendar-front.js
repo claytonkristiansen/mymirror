@@ -5,7 +5,7 @@ function replaceElements(response) {
     if (numEntries < 4) {
         numDel = 4 - numEntries;
     }
-
+                                                  
     while (numEntries > 0) {
         if (count > 3) {
             break;
@@ -15,6 +15,7 @@ function replaceElements(response) {
             name = name.substring(0,26) + "...";
         }
         var time = response["result"]["items"][count]["start"]["dateTime"];
+        console.log(time);
         var dashIdx = time.indexOf('-');
         var timeStart = time.substring(dashIdx-8,dashIdx-3);
         var timeStartHour = Number(time.substring(0,2));
