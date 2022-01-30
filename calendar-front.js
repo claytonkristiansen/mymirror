@@ -23,4 +23,4 @@ function replaceElements(response) {
 
 }
 
-//setInterval(listUpcomingEvents(), 5);
+setInterval(listUpcomingEvents(), 5000);
