@@ -1,4 +1,4 @@
-## myMirror
+# myMirror - A way to reflect on your daily tasks
 https://claytonkristiansen.github.io/mymirror/
 https://devpost.com/software/mymirror
 
