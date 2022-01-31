@@ -1,6 +1,7 @@
 # myMirror - A way to reflect on your daily tasks
-https://claytonkristiansen.github.io/mymirror/
-https://devpost.com/software/mymirror
+[Live Site](https://claytonkristiansen.github.io/mymirror/)
+
+[Devpost](https://devpost.com/software/mymirror)
 
 ## Inspiration
 
